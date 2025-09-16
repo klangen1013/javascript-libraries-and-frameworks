@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Build a Webpage Using Bootstrap 5</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="img/Logo.jpg" alt="logo" width="80"/></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#destinations">Destinations</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact Us</a>
+            </li>
+        </ul>
+        </div>
+    </div>
+    </nav>
+
+    <!-- Carousel -->
+    <div id="carouselExampleIndicators" class="carousel slide">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+        <img src="img/Oslo.jpg" class="d-block w-100" alt="oslo">
+        </div>
+        <div class="carousel-item">
+        <img src="img/Geirangerfjord.jpg" class="d-block w-100" alt="geirangerfjord">
+        </div>
+        <div class="carousel-item">
+        <img src="img/Bergen.jpg" class="d-block w-100" alt="bergen">
+        </div>
+        <div class="carousel-item">
+        <img src="img/Lofoten Island.jpg" class="d-block w-100" alt="lofoten">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+    </div>
+
+
+    <!-- Main Container-->
+    <div class="container">
+        <h1 class="text-center p-5 mb-5 mt-5">Tour Norway Today!</h1>
+
+        <div class="w-100 bg-dark-subtle p-5 mb-5">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium in cupiditate eligendi quidem impedit. Fugit debitis beatae excepturi, velit iste nam! Animi nam tempore praesentium eligendi blanditiis, atque inventore voluptas quisquam nisi ea similique soluta reprehenderit doloremque. In eveniet, reiciendis nesciunt expedita molestiae perferendis placeat, reprehenderit minima saepe, quibusdam similique eius voluptate ex ab aspernatur! Quidem nisi debitis, alias magni deserunt sed reprehenderit laboriosam molestias. Corrupti ut harum voluptate, repellendus modi nisi veritatis possimus tenetur voluptates velit minima quas placeat odio dolores iste laborum dolorem totam, cumque voluptatibus dicta? Ex, error! Rem quaerat provident minus deleniti consequatur saepe, culpa sapiente!</p>
+            <button type="button" class="btn btn-primary btn-lg">Book Your Trip Now</button>
+        </div>
+
+        <h2 id="destinations" class="fs-1 p-5 mt-5 mb-5 text-center">DESTINATIONS</h2>
+
+        <div class="row">
+            <div class="col">
+                <!-- Card 1 -->
+                <div class="card">
+                    <img src="img/Lofoten Island.jpg" class="card-img-top" alt="lofoten">
+                    <div class="card-body">
+                        <h5 class="card-title">Lofoten Islands</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus maxime distinctio, illum saepe, doloremque numquam labore modi dolor tenetur magnam officiis, facilis fugiat obcaecati mollitia esse ipsum perspiciatis ipsa nobis.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+             <div class="col">
+                <!-- Card 2 -->
+                <div class="card">
+                    <img src="img/Oslo.jpg" class="card-img-top" alt="olso">
+                    <div class="card-body">
+                        <h5 class="card-title">Oslo</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus maxime distinctio, illum saepe, doloremque numquam labore modi dolor tenetur magnam officiis, facilis fugiat obcaecati mollitia esse ipsum perspiciatis ipsa nobis.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+             <div class="col">
+                <!-- Card 3 -->
+                <div class="card">
+                    <img src="img/Bergen.jpg" class="card-img-top" alt="bergen">
+                    <div class="card-body">
+                        <h5 class="card-title">Bergen</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus maxime distinctio, illum saepe, doloremque numquam labore modi dolor tenetur magnam officiis, facilis fugiat obcaecati mollitia esse ipsum perspiciatis ipsa nobis.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- About -->
+        <h2 id="about" class="fs-1 p-5 mt-5 mb-5 text-center">ABOUT</h2>
+        <div class="row">
+            <div class="col-6">
+                <div class="bg-secondary text-white p-5 mt-5 mb-5">
+                    <h2>Rates</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt officia esse, temporibus porro sequi aspernatur cum unde, minima sit molestias vel voluptatem similique saepe adipisci harum itaque est voluptate molestiae praesentium quod culpa. Consequatur quam assumenda asperiores labore ducimus. Voluptates iusto dicta ipsum laborum recusandae numquam ex aperiam aspernatur reiciendis.</p>
+                </div>
+            </div>
+             <div class="col-6">
+                <div class="bg-dark-subtle p-5 mt-5 mb-5">
+                    <h2>Fees</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt officia esse, temporibus porro sequi aspernatur cum unde, minima sit molestias vel voluptatem similique saepe adipisci harum itaque est voluptate molestiae praesentium quod culpa. Consequatur quam assumenda asperiores labore ducimus. Voluptates iusto dicta ipsum laborum recusandae numquam ex aperiam aspernatur reiciendis.</p>
+                </div>
+            </div>
+             <div class="col-6">
+                <div class="bg-dark-subtle p-5 mt-5 mb-5">
+                    <h2>Popular Sites</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt officia esse, temporibus porro sequi aspernatur cum unde, minima sit molestias vel voluptatem similique saepe adipisci harum itaque est voluptate molestiae praesentium quod culpa. Consequatur quam assumenda asperiores labore ducimus. Voluptates iusto dicta ipsum laborum recusandae numquam ex aperiam aspernatur reiciendis.</p>
+                </div>
+            </div>
+             <div class="col-6">
+                <div class="bg-secondary text-white p-5 mt-5 mb-5">
+                    <h2>Features</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt officia esse, temporibus porro sequi aspernatur cum unde, minima sit molestias vel voluptatem similique saepe adipisci harum itaque est voluptate molestiae praesentium quod culpa. Consequatur quam assumenda asperiores labore ducimus. Voluptates iusto dicta ipsum laborum recusandae numquam ex aperiam aspernatur reiciendis.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Us-->
+        <h2 id="contact" class="fs-1 p-5 mt-5 mb-5 text-center">CONTACT US</h2>
+
+        <div class="w-100 bg-dark-subtle p-5 mb-5">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium in cupiditate eligendi quidem impedit. Fugit debitis beatae excepturi, velit iste nam! Animi nam tempore praesentium eligendi blanditiis, atque inventore voluptas quisquam nisi ea similique soluta reprehenderit doloremque. In eveniet, reiciendis nesciunt expedita molestiae perferendis placeat, reprehenderit minima saepe, quibusdam similique eius voluptate ex ab aspernatur! Quidem nisi debitis, alias magni deserunt sed reprehenderit laboriosam molestias. Corrupti ut harum voluptate, repellendus modi nisi veritatis possimus tenetur voluptates velit minima quas placeat odio dolores iste laborum dolorem totam, cumque voluptatibus dicta? Ex, error! Rem quaerat provident minus deleniti consequatur saepe, culpa sapiente!</p>
+         <button type="button" class="btn btn-primary btn-lg"><a href="mailto: abc@def.com" class="text-white text-decoration-none">Contact Us For More Information</a></button>
+         </div>
+
+        <h2 class="fs-1 p-5 mt-5 mb-5 text-center">RELAX IN BEAUTIFUL NORWAY</h2>
+        <img src="img/Geirangerfjord.jpg" alt="vacay" class="w-100 mb-5">
+
+
+    </div>
+    <!-- End of .container -->
+
+    <footer class="bg-dark mt-5 p-5 text-white text-center">
+        <p>&copy; Tour Norway Today</p>
+        <p><a href="mailto: abc@def.com" class="text-white">Email Us</a></p>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>
