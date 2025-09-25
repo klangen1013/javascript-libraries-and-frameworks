@@ -1,8 +1,8 @@
 
 @font-face {
     font-family: "Magic Retro";
-    src: local("Magic Retro"),
-    url("fonts/magic.ttf") format(".ttf");
+    /*src: local("Magic Retro"), */
+    src: url("fonts/magic.ttf") format("truetype");
 }
 
 .magic {
